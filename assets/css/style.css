@@ -1,0 +1,305 @@
+/* =============NAVBAR============== */
+.nav{
+    display: flex;
+    align-items: center;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+    padding: .4rem 0;
+}
+.navbar-brand > img{
+    width: 3rem;
+    border: 2px solid white;
+}
+.nav-links{
+    padding: 0 .5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.02rem;
+    transition: .3s;
+}
+.nav-links:hover{
+    color: rgb(202, 202, 202);
+}
+/* =================Footer================= */
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 4rem;
+}
+.footer > .logo > img{
+    width: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.footer > h4{
+    font-size: 1rem;
+    color: white;
+}
+.footer > .links-cont{
+    position: absolute;
+    right: 1rem;
+}
+.footer > .links-cont > a{
+    padding: 0 .2rem;
+}
+.footer > .links-cont > a > img{
+    width: 1.3rem;
+    transition: .3s;
+}
+.footer > .links-cont > a > img:hover{
+    opacity: .8;
+}
+/* ===========================Landing Page============================== */
+
+/* ==================Welcome sect===================== */
+.landing-page > .welcome-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/assets/images/backgrounds/red-pc.jpg) rgba(0, 0, 0, 0.651);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.landing-page > .welcome-sect > .yt-logo{
+    border: 5px solid white;
+    width: 20rem;
+}
+.landing-page > .welcome-sect > h3{
+    color: white;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.landing-page > .welcome-sect > a > .down-arrow {
+    width: 4rem;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2rem;
+    left: 48vw;
+    animation: click-me 2s;
+    animation-iteration-count: infinite;
+    transition: .1s;
+}
+@keyframes click-me {
+    0%{margin-bottom: 0;}
+    25%{margin-bottom: 5.5rem;}
+    50%{margin-bottom: 0;}
+    75%{margin-top: 5.5rem;}
+    100%{margin-top: 0;}
+    
+}
+/* ==================Streams sect===================== */
+.landing-page > .stream-sect {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url(/assets/images/backgrounds/desk_pink.jpg) rgba(0, 0, 0, 0.651);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+.landing-page > .stream-sect > .heading{
+    color: white;
+    position: relative;
+    top: 1rem;
+}
+.landing-page > .stream-sect > .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+.landing-page > .stream-sect > .card-container >.card{
+ padding: .7rem .5rem;
+ border-radius: 10px;
+ height: 23rem;
+ width: 18rem;
+ margin: 1.4rem 0;
+ background-color: rgba(255, 255, 255, 0.788);
+}
+.landing-page > .stream-sect > .card-container >.card > img{
+    border-radius: 10px;
+}
+.landing-page > .stream-sect > .card-container >.card > .card-body > .card-title{
+    font-size: 1rem;
+}
+.landing-page > .stream-sect > .card-container >.card >.card-body > .btn{
+    position: absolute;
+    bottom: .7rem;
+}
+
+/* ==================Videos sect===================== */
+.landing-page > .video-sect {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url(/assets/images/backgrounds/razer_keyboard.jpg) rgba(0, 0, 0, 0.651);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+.landing-page > .video-sect > .heading{
+    color: white;
+    position: relative;
+    top: 1rem;
+}
+.landing-page > .video-sect > .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+.landing-page > .video-sect > .card-container >.card{
+ padding: .7rem .5rem;
+ border-radius: 10px;
+ height: 23rem;
+ width: 18rem;
+ margin: 1.4rem 0;
+ background-color: rgba(255, 255, 255, 0.788);
+}
+.landing-page > .video-sect > .card-container >.card > img{
+    border-radius: 10px;
+}
+.landing-page > .video-sect > .card-container >.card > .card-body > .card-title{
+    font-size: 1rem;
+}
+.landing-page > .video-sect > .card-container >.card >.card-body > .btn{
+    position: absolute;
+    bottom: .7rem;
+}
+/* ===========================Streams Page============================== */
+
+.streams-page{
+    background: url(/assets/images/backgrounds/blue_controller.jpg) rgba(0, 0, 0, 0.751);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+
+}
+.streams-page > .main{
+    height: 100vh;
+    padding: 5rem 0 0 2rem;
+    overflow: auto;
+    
+
+} 
+.streams-page > .main > .card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: wrap;
+    overflow-y: auto;
+    
+}
+.streams-page > .main > .card-cont > .cards{
+    width: 23rem;
+    margin: 1rem 2rem;
+    padding: .4rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+.streams-page > .main > .card-cont > .cards:hover{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.streams-page > .main > .card-cont > .cards > .card-img-top{
+    border-radius: 10px;
+}
+.streams-page > .main > .card-cont > .card:hover{
+    width: 25rem;
+}
+.streams-page > .main > .card-cont > .cards > .card-body{
+    display: flex;
+    align-items: center;
+    padding: .5rem 0 0 0;
+
+}
+.streams-page > .main > .card-cont > .cards > .card-body > .card-title{
+    font-size: 1rem;
+    color: white;
+    padding: 0 0 0 .5rem;
+}
+.streams-page > .main > .card-cont > .cards > .card-body >  .yt-logo{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}
+.streams-page > .main > .card-cont > .yt-link > .btn{
+    margin: 1rem 0;
+}
+
+/* ===========================Videos Page============================== */
+
+.videos-page{
+    background: url(/assets/images/backgrounds/blue_controller.jpg) rgba(0, 0, 0, 0.751);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+
+}
+.videos-page > .main{
+    height: 100vh;
+    padding: 5rem 0 0 2rem;
+    overflow: auto;
+    
+
+} 
+.videos-page > .main > .card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: wrap;
+    overflow-y: auto;
+    
+}
+.videos-page > .main > .card-cont > .cards{
+    width: 23rem;
+    margin: 1rem 2rem;
+    padding: .4rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+.videos-page > .main > .card-cont > .cards:hover{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.videos-page > .main > .card-cont > .cards > .card-img-top{
+    border-radius: 10px;
+}
+.videos-page > .main > .card-cont > .card:hover{
+    width: 25rem;
+}
+.videos-page > .main > .card-cont > .cards > .card-body{
+    display: flex;
+    align-items: center;
+    padding: .5rem 0 0 0;
+
+}
+.videos-page > .main > .card-cont > .cards > .card-body > .card-title{
+    font-size: 1rem;
+    color: white;
+    padding: 0 0 0 .5rem;
+}
+.videos-page > .main > .card-cont > .cards > .card-body >  .yt-logo{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}
+.videos-page > .main > .card-cont > .yt-link > .btn{
+    margin: 1rem 0;
+}
